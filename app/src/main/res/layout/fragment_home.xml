@@ -1,0 +1,148 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:background="@color/primary_light"
+        tools:context=".fragment.HomeFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.gc.materialdesign.views.ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/homeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <com.gc.materialdesign.views.Card
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                            android:id="@+id/newsIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@color/primary">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/home_iconMargin"
+                                android:src="@mipmap/news"/>
+
+                        <TextView
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/newsTitle"
+                                android:textColor="@color/icons"
+                                android:textSize="24sp"/>
+
+                        <com.gc.materialdesign.views.LayoutRipple
+                                android:id="@+id/moreNews"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/home_iconMargin"
+                                android:layout_marginEnd="@dimen/home_iconMargin"
+                                android:background="@android:color/transparent"
+                                app:rippleColor="@color/primary_dark">
+
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_more_horiz_white_36dp"/>
+
+                        </com.gc.materialdesign.views.LayoutRipple>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/newsList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/record_listPadding"
+                            android:layout_below="@id/newsIcon"
+                            android:background="@android:color/white"
+                            tools:layout_height="120dp">
+
+                    </LinearLayout>
+
+                </com.gc.materialdesign.views.Card>
+
+                <com.gc.materialdesign.views.Card
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                            android:id="@+id/noticeIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@color/primary">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/home_iconMargin"
+                                android:src="@mipmap/notice"/>
+
+                        <TextView
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/noticeTitle"
+                                android:textColor="@color/icons"
+                                android:textSize="24sp"/>
+
+                        <com.gc.materialdesign.views.LayoutRipple
+                                android:id="@+id/moreNotice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/home_iconMargin"
+                                android:layout_marginEnd="@dimen/home_iconMargin"
+                                android:background="@android:color/transparent"
+                                app:rippleColor="@color/primary_dark">
+
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_more_horiz_white_36dp"/>
+
+                        </com.gc.materialdesign.views.LayoutRipple>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/noticeList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/record_listPadding"
+                            android:layout_below="@id/noticeIcon"
+                            android:background="@android:color/white"
+                            tools:layout_height="120dp">
+
+                    </LinearLayout>
+
+                </com.gc.materialdesign.views.Card>
+
+            </LinearLayout>
+
+        </com.gc.materialdesign.views.ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

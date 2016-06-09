@@ -2,23 +2,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.zheng0716.ustbnews">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
-            android:fullBackupContent="true"
             android:allowBackup="true"
+            android:fullBackupContent="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme"
-            android:screenOrientation="portrait">
-
-        <activity android:name=".GuideActivity">
+            android:theme="@style/AppTheme">
+        <activity android:name=".activity.GuideActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
+        <activity android:name=".activity.MainActivity">
+        </activity>
+        <activity android:name=".activity.WebActivity">
+        </activity>
     </application>
 
 </manifest>

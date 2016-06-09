@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gc.materialdesign.views.LayoutRipple
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_open_in_browser_black_24dp"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="[测试信息]测试信息测试信息测试信息测试信息测试信息"
+                    android:textColor="@color/primary_text"
+                    android:id="@+id/text"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    tools:text="xx-xx-xx"
+                    android:textColor="@color/secondary_text"
+                    android:singleLine="true"
+                    android:id="@+id/date"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/secondary_text"
+                    android:layout_marginTop="@dimen/record_listPadding"
+                    android:layout_marginBottom="@dimen/record_listPadding"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.gc.materialdesign.views.LayoutRipple>

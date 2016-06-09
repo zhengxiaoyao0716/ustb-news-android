@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">留学北科</string>
+
+    <!-- DO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_newButtonText">动态</string>
+    <string name="main_studyButtonText">留学</string>
+    <string name="newsTitle">新闻速递</string>
+    <string name="noticeTitle">公告通知</string>
+    <string name="noneConnect">无网络连接！</string>
 </resources>

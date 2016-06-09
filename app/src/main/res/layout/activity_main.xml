@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light"
+        tools:context=".activity.MainActivity">
+
+    <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <LinearLayout
+            android:id="@+id/buttonBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/main_buttonBarPadding_tb"
+            android:paddingBottom="@dimen/main_buttonBarPadding_tb"
+            android:background="@color/primary"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+        <com.gc.materialdesign.views.LayoutRipple
+                android:id="@+id/newButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_buttonMargin_lr"
+                android:layout_marginRight="@dimen/main_buttonMargin_lr"
+                android:background="@android:color/transparent"
+                app:rippleColor="@color/primary_dark"
+                android:onClick="onButtonsClick">
+
+            <ImageView
+                    android:id="@+id/newImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fiber_new_white_36dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_newButtonText"
+                    android:textColor="@color/icons"
+                    android:layout_below="@id/newImage"
+                    android:layout_centerHorizontal="true"/>
+
+        </com.gc.materialdesign.views.LayoutRipple>
+        <com.gc.materialdesign.views.LayoutRipple
+                android:id="@+id/homeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_buttonMargin_lr"
+                android:layout_marginRight="@dimen/main_buttonMargin_lr"
+                android:background="@android:color/transparent"
+                app:rippleColor="@color/primary_dark"
+                android:onClick="onButtonsClick">
+
+            <ImageView
+                    android:id="@+id/homeImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_white_48dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+        </com.gc.materialdesign.views.LayoutRipple>
+        <com.gc.materialdesign.views.LayoutRipple
+                android:id="@+id/studyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_buttonMargin_lr"
+                android:layout_marginRight="@dimen/main_buttonMargin_lr"
+                android:background="@android:color/transparent"
+                app:rippleColor="@color/primary_dark"
+                android:onClick="onButtonsClick">
+
+            <ImageView
+                    android:id="@+id/studyImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_supervisor_account_white_36dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_studyButtonText"
+                    android:textColor="@color/icons"
+                    android:layout_below="@id/studyImage"
+                    android:layout_centerHorizontal="true"/>
+
+        </com.gc.materialdesign.views.LayoutRipple>
+
+    </LinearLayout>
+
+</FrameLayout>
